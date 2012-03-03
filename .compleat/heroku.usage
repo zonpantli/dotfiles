@@ -1,0 +1,10 @@
+heroku logs <logsoptions>;
+heroku rake <options>;
+heroku config <options>;
+heroku addons <options>;
+heroku addons:open (compleat|newrelic|papertrail|sendgrid|hoptoad|loggly) <options>;
+heroku console <options>;
+heroku help;
+
+options = [--app (dealium-production | dealium-staging)] ...;
+logsoptions = [--tail | --app (dealium-production | dealium-staging)] ...;

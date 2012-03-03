@@ -1,0 +1,4 @@
+ssh <known_hosts>;
+
+known_hosts = ! cat $HOME/.ssh/known_hosts | awk '{ if ($1 ~ /(^.+),/) { gsub(/,.*$/, "", $1)
+                    print $1 } }';

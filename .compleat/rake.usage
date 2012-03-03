@@ -1,0 +1,9 @@
+rake
+  ( -T
+  | <tasks> );
+
+tasks = !
+  if [ -f Rakefile ]
+  then
+    ~/.compleat/rake/tasks
+  fi ;
