@@ -1,0 +1,89 @@
+function parse_git_branch {
+  ref=$(git-symbolic-ref HEAD 2> /dev/null) || return
+  echo "(${ref#refs/heads/}) "
+}
+
+GREEN="\[\033[0;32m\]" 
+WHITE="\[\033[1;37m\]"
+
+# If running interactively, then:
+if [ "$PS1" ]; then
+
+    # enable color support of ls and also add handy aliases
+	export CLICOLOR=1
+	export LSCOLORS=ExFxCxDxBxegedabagacad
+	
+    # some more ls aliases
+    alias ll='ls -l'
+    alias la='ls -A'
+    alias l='ls -CF'
+
+    # PS1='\u@\h:\w $ '
+    PS1="\u@\h:\w $GREEN\$(parse_git_branch)$WHITE$ "
+fi
+
+
+# ---------------------------------------------------------------------
+
+# set envs
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/cuda/bin:~/bin:$PATH"
+export DYLD_LIBRARY_PATH="/usr/local/cuda/lib:$DYLD_LIBRARY_PATH"
+export C_INCLUDE_PATH="/Developer/CUDA/common/inc:$C_INCLUDE_PATH"
+export CPLUS_INCLUDE_PATH="/Developer/CUDA/common/inc:$CPLUS_INCLUDE_PATH"
+
+
+#-- source private stuff
+source /Users/mepihlaj/.bash_private
+
+# misc
+alias rb='rm *~'
+alias ios='/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app/Contents/MacOS/iPhone\ Simulator'
+alias gitgraph='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s" --all --date=short'
+alias b='bundle exec'
+
+#-- 
+
+# Choose Python framework
+# PATH="/Library/Frameworks/Python.framework/Versions/Current/bin:${PATH}"
+# export PATH
+
+# Setting PATH for EPD-6.2-2 64bit  || not in use, does not work with cudamat
+PATH="/Library/Frameworks/EPD64.framework/Versions/Current/bin:${PATH}"
+export PATH
+export MKL_NUM_THREADS=2
+
+export PATH="/usr/local/Library/apache-maven-2.2.1/bin:$PATH"
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+# Android SDK, phonegap android
+export ANDROID_HOME="/Users/mepihlaj/projects/android/android-sdk-mac_x86"
+export ANDROID_SDK="/Users/mepihlaj/projects/android/android-sdk-mac_x86"
+export PATH="$PATH:/Users/mepihlaj/projects/android/android-sdk-mac_x86/platform-tools"
+export PATH="$PATH:/Users/mepihlaj/projects/android/android-sdk-mac_x86/tools"
+export PATH="$PATH:/Users/mepihlaj/projects/mobile/phonegap/phonegap-android/bin"
+
+# phpsh
+export PATH="$PATH:/Users/mepihlaj/projects/php/phpsh/build/scripts-2.6"
+
+# compleat smart completion
+export PATH="$PATH:/Users/mepihlaj/.cabal/bin"
+source /Users/mepihlaj/.cabal/share/compleat-1.0/compleat_setup
+
+# Play! Java web framework
+export PATH="$PATH:/Users/mepihlaj/projects/java/play-1.2.3"
+
+# Akka
+export AKKA_HOME="~/Library/typesafe-stack"
+
+# Scala from type-safe stack
+export PATH="$PATH:~/Library/typesafe-stack/bin"
+
+# Cloudera CDH3
+export HADOOP_HOME="/Users/mepihlaj/Library/CDH3/hadoop"
+export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hadoop/bin"
+export HIVE_HOME="/Users/mepihlaj/Library/CDH3/hive"
+export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hive/bin"
+
+
+# RVM - Ruby version control
+if [[ -s /Users/mepihlaj/.rvm/scripts/rvm ]] ; then source /Users/mepihlaj/.rvm/scripts/rvm ; fi
