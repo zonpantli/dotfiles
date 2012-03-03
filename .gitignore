@@ -1,0 +1,5 @@
+.DS_Store
+.emacs.d/elpa/*/*elc
+.emacs.d/mepihlaj/*elc
+**/*/*~
+.emacs.d/backup
