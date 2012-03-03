@@ -3,3 +3,7 @@
 .emacs.d/mepihlaj/*elc
 **/*/*~
 .emacs.d/backup
+.emacs.d/places
+.emacs.d/swank
+.emacs.d/*/#*
+.emacs.d/.smex-items
