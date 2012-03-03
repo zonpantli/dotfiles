@@ -43,3 +43,9 @@
 ;;; textmate mode https://github.com/tanoku/textmate.el
 (require 'textmate)
 (textmate-mode)
+
+;; yasnippets
+(add-to-list 'load-path
+              "~/.emacs.d/plugins/yasnippet")
+(require 'yasnippet)
+(yas/global-mode 1)
