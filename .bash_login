@@ -84,6 +84,11 @@ export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hadoop/bin"
 export HIVE_HOME="/Users/mepihlaj/Library/CDH3/hive"
 export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hive/bin"
 
+# clojurescript
+export CLOJURESCRIPT_HOME="/Users/mepihlaj/projects/clojure/libs/clojurescript"
+export PATH="$PATH:$CLOJURESCRIPT_HOME/bin"
 
 # RVM - Ruby version control
 if [[ -s /Users/mepihlaj/.rvm/scripts/rvm ]] ; then source /Users/mepihlaj/.rvm/scripts/rvm ; fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -1,0 +1,20 @@
+ls
+ll
+ll -a
+ruby foo.rb 
+ruby foo.rb 
+cd
+cd projects/kovalo/
+ls
+cd rails/dealium/
+ls
+git status
+ruby server.rb 
+ls
+ls
+rm #notepad.html"
+rm #notepad.html#
+cd ..
+ls
+cd ..
+ls
