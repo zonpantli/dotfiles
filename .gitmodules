@@ -1,0 +1,9 @@
+[submodule ".emacs.d/mepihlaj/ac-slime"]
+	path = .emacs.d/mepihlaj/ac-slime
+	url = https://github.com/purcell/ac-slime.git
+[submodule ".emacs.d/mepihlaj/align-cljlet"]
+	path = .emacs.d/mepihlaj/align-cljlet
+	url = https://github.com/gstamp/align-cljlet.git
+[submodule ".emacs.d/mepihlaj/bm"]
+	path = .emacs.d/mepihlaj/bm
+	url = https://github.com/joodland/bm.git
