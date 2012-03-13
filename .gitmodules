@@ -7,3 +7,6 @@
 [submodule ".emacs.d/mepihlaj/bm"]
 	path = .emacs.d/mepihlaj/bm
 	url = https://github.com/joodland/bm.git
+[submodule ".emacs.d/mepihlaj/yasnippet"]
+	path = .emacs.d/mepihlaj/yasnippet
+	url = https://github.com/capitaomorte/yasnippet.git

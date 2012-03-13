@@ -39,10 +39,10 @@
 (textmate-mode)
 
 ;; yasnippets
-(add-to-list 'load-path "~/.emacs.d/plugins/yasnippet")
+(add-to-list 'load-path "~/.emacs.d/mepihlaj/yasnippet")
 (require 'yasnippet)
-(setq yas/snippet-dirs '("~/.emacs.d/plugins/yasnippet/snippets"
-                         "~/.emacs.d/plugins/yasnippet/extras/imported"))
+(setq yas/snippet-dirs '("~/.emacs.d/mepihlaj/yasnippet/snippets"
+                         "~/.emacs.d/mepihlaj/yasnippet/extras/imported"))
 
 ;; (yas/global-mode 1)
 
