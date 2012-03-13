@@ -43,7 +43,6 @@
 (require 'yasnippet)
 (setq yas/snippet-dirs '("~/.emacs.d/mepihlaj/yasnippet/snippets"
                          "~/.emacs.d/mepihlaj/yasnippet/extras/imported"))
-
 ;; (yas/global-mode 1)
 
 ;; autopair for non-lisp parenthesis goodness
@@ -81,6 +80,12 @@
 ;; align-cljlet
 (add-to-list 'load-path "~/.emacs.d/mepihlaj/align-cljlet")
 (require 'align-cljlet)
+
+;; sr-speedbar for speedbar fixed on main window
+(require 'sr-speedbar)
+(setq sr-speedbar-right-side nil)
+(setq speedbar-use-images nil)
+(setq sr-speedbar-skip-other-window-p t)
 
 ;; Clourescript development ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
