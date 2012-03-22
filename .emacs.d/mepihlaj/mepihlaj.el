@@ -47,12 +47,12 @@
 
 ;; autopair for non-lisp parenthesis goodness
 (require 'autopair)
-(add-hook 'ruby-mode-common-hook #'(lambda () (autopair-mode)))
-(add-hook 'c-mode-common-hook #'(lambda () (autopair-mode)))
-(add-hook 'coffeescript-mode-common-hook #'(lambda () (autopair-mode)))
+(add-hook 'ruby-mode-hook (lambda () (autopair-mode)))
+(add-hook 'c-mode-hook (lambda () (autopair-mode)))
+(add-hook 'coffeescript-mode-hook (lambda () (autopair-mode)))
+(add-hook 'html-mode-hook (lambda () (autopair-mode)))
 
-(add-hook 'javascript-mode-hook (lambda () (autopair-mode +1)))
-(add-hook 'javascript-mode-hook (lambda () (paredit-mode -1)))
+
 
 ;; auto-complete
 ;; http://sebastianlab.com/post/2409175090/autocomplete-in-clojure
@@ -155,3 +155,4 @@
 ;; scss mode
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
+(setq scss-compile-at-save nil)
