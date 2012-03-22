@@ -54,6 +54,7 @@ export MKL_NUM_THREADS=2
 
 export PATH="/usr/local/Library/apache-maven-2.2.1/bin:$PATH"
 export JAVA_HOME=$(/usr/libexec/java_home)
+export JRUBY_OPTS="--1.9"
 
 # Android SDK, phonegap android
 export ANDROID_HOME="/Users/mepihlaj/projects/android/android-sdk-mac_x86"
