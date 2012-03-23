@@ -9,3 +9,5 @@
 .emacs.d/.smex-items
 .emacs.d/ac-comphist.dat
 .emacs.d/eshell
+\#*
+.#*
