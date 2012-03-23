@@ -9,5 +9,6 @@
 .emacs.d/.smex-items
 .emacs.d/ac-comphist.dat
 .emacs.d/eshell
+.emacs.d/.org-id-locations
 \#*
 .#*
