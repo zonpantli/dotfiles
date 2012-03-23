@@ -49,7 +49,7 @@
 (require 'autopair)
 (add-hook 'ruby-mode-hook (lambda () (autopair-mode)))
 (add-hook 'c-mode-hook (lambda () (autopair-mode)))
-(add-hook 'coffeescript-mode-hook (lambda () (autopair-mode)))
+(add-hook 'coffee-mode-hook (lambda () (autopair-mode)))
 (add-hook 'html-mode-hook (lambda () (autopair-mode)))
 (add-hook 'scss-mode-hook (lambda () (autopair-mode)))
 
