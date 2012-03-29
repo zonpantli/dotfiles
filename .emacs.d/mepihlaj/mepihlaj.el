@@ -179,3 +179,7 @@
 (setq org-src-window-setup 'current-window)
 
 (provide 'ob-clojure)
+
+;; io inferior mode
+(add-to-list 'load-path "~/.emacs.d/mepihlaj/io-emacs")
+(require 'io-mode-inf)

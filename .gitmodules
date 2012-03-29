@@ -10,3 +10,6 @@
 [submodule ".emacs.d/mepihlaj/yasnippet"]
 	path = .emacs.d/mepihlaj/yasnippet
 	url = https://github.com/capitaomorte/yasnippet.git
+[submodule ".emacs.d/mepihlaj/io-emacs"]
+	path = .emacs.d/mepihlaj/io-emacs
+	url = https://github.com/slackorama/io-emacs.git
