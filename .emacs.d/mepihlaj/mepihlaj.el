@@ -52,6 +52,7 @@
 (add-hook 'coffee-mode-hook (lambda () (autopair-mode)))
 (add-hook 'html-mode-hook (lambda () (autopair-mode)))
 (add-hook 'scss-mode-hook (lambda () (autopair-mode)))
+(add-hook 'io-mode-hook (lambda () (autopair-mode)))
 
 ;; auto-complete
 ;; http://sebastianlab.com/post/2409175090/autocomplete-in-clojure
