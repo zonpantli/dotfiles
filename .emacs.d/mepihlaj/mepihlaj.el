@@ -156,6 +156,8 @@
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
 (setq scss-compile-at-save nil)
+(setq css-indent-level 2)
+(setq css-indent-offset 2)
 
 ;; org-mode setup
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
