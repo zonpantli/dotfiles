@@ -201,3 +201,5 @@
 ;;== global autorevert to make switching branches nice =========
 (global-auto-revert-mode 1)
 
+;;== set file shortcuts to registers ===========================
+(set-register ?e '(file . "~/.emacs.d/mepihlaj/mepihlaj.el"))
