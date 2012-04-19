@@ -51,6 +51,14 @@
                          "~/.emacs.d/mepihlaj/yasnippet/extras/imported"))
 ;; (yas/global-mode 1)
 
+;;== coffee mode indenting ========================================
+(defun coffee-custom-indentation ()
+  "coffee-mode-hook"
+ (set (make-local-variable 'tab-width) 2))
+
+(add-hook 'coffee-mode-hook
+  '(lambda() (coffee-custom-indentation)))
+
 ;;== autopair for non-lisp parenthesis goodness ===================
 (require 'autopair)
 (add-hook 'ruby-mode-hook (lambda () (autopair-mode)))
