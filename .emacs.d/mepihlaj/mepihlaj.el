@@ -52,12 +52,22 @@
 ;; (yas/global-mode 1)
 
 ;;== coffee mode indenting ========================================
-(defun coffee-custom-indentation ()
+(add-to-list 'load-path "~/.emacs.d/mepihlaj/coffee-mode")
+(require 'coffee-mode)
+
+(defun coffee-custom ()
   "coffee-mode-hook"
- (set (make-local-variable 'tab-width) 2))
+
+ ;; set indentation
+ (set (make-local-variable 'tab-width) 2)
+ 
+ ;; compile key binding
+ (define-key coffee-mode-map [(meta r)] 'coffee-compile-buffer))
 
 (add-hook 'coffee-mode-hook
-  '(lambda() (coffee-custom-indentation)))
+  '(lambda() (coffee-custom)))
+
+
 
 ;;== autopair for non-lisp parenthesis goodness ===================
 (require 'autopair)
