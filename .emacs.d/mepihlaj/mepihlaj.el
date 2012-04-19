@@ -169,6 +169,10 @@
 (setq css-indent-level 2)
 (setq css-indent-offset 2)
 
+;;== js2-mode ===================================================
+(autoload 'js2-mode "js2-mode/js2-mode" nil t)
+(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+
 ;;== org-mode setup =============================================
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 (global-set-key "\C-cl" 'org-store-link)

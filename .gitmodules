@@ -13,3 +13,6 @@
 [submodule ".emacs.d/mepihlaj/io-emacs"]
 	path = .emacs.d/mepihlaj/io-emacs
 	url = https://github.com/slackorama/io-emacs.git
+[submodule ".emacs.d/mepihlaj/js2-mode"]
+	path = .emacs.d/mepihlaj/js2-mode
+	url = git://github.com/mooz/js2-mode.git
