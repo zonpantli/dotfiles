@@ -19,3 +19,6 @@
 [submodule ".emacs.d/mepihlaj/coffee-mode"]
 	path = .emacs.d/mepihlaj/coffee-mode
 	url = git://github.com/defunkt/coffee-mode.git
+[submodule ".emacs.d/mepihlaj/geiser"]
+	path = .emacs.d/mepihlaj/geiser
+	url = git://git.sv.gnu.org/geiser.git

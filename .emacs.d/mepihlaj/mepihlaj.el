@@ -31,7 +31,7 @@
 (require 'align-cljlet)
 
 ;;== Geiser scheme ================================================
-(load-file "~/projects/scheme/geiser/elisp/geiser.el")
+(load-file "~/.emacs.d/mepihlaj/geiser/elisp/geiser.el")
 (add-hook 'geiser-racket-mode-hook (lambda () (paredit-mode +1)))
 (setq geiser-active-implementations '(racket))
 
