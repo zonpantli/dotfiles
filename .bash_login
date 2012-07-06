@@ -68,7 +68,7 @@ export PATH="$PATH:/Users/mepihlaj/projects/php/phpsh/build/scripts-2.6"
 
 # compleat smart completion
 export PATH="$PATH:/Users/mepihlaj/.cabal/bin"
-source /Users/mepihlaj/.cabal/share/compleat-1.0/compleat_setup
+# source /Users/mepihlaj/.cabal/share/compleat-1.0/compleat_setup
 
 # Play! Java web framework
 export PATH="$PATH:/Users/mepihlaj/projects/java/play-1.2.3"
