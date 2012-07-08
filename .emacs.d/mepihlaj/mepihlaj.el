@@ -15,6 +15,10 @@
 ;;== set smaller font . OS X =====================================
 (set-default-font "-apple-Monaco-medium-normal-normal-*-10-*-*-*-m-0-iso10646-1")
 
+;;== set initial frame size  =====================================
+(if (window-system)
+    (set-frame-size (selected-frame) 110 60))
+
 
 ;;== CDT-Emacs Clojure debug =====================================
 (setq cdt-dir "/Users/mepihlaj/.lein/cdt")
