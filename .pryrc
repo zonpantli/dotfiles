@@ -1,1 +1,1 @@
-Pry.config.editor = "mate"
+Pry.config.editor = "vim"
