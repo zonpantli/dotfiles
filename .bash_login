@@ -36,6 +36,8 @@ alias rb='rm *~'
 alias ios='/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app/Contents/MacOS/iPhone\ Simulator'
 alias gitgraph='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s" --all --date=short'
 alias b='bundle exec'
+alias oolong='java -jar /Users/mepihlaj/projects/java/programming-for-the-jvm/oolong/target/scala_2.8.1/engel-1.0.jar'
+alias gnoloo='java -cp /Users/mepihlaj/projects/java/programming-for-the-jvm/oolong/target/scala_2.8.1/classes COM.sootNsmoke.oolong.Gnoloo'
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 export JRUBY_OPTS="--1.9"
@@ -55,3 +57,7 @@ export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hadoop/bin"
 
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Node version manager
+source /Users/mepihlaj/Library/nvm/nvm.sh
+nvm use default

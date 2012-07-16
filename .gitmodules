@@ -22,3 +22,6 @@
 [submodule ".emacs.d/mepihlaj/geiser"]
 	path = .emacs.d/mepihlaj/geiser
 	url = git://git.sv.gnu.org/geiser.git
+[submodule ".emacs.d/mepihlaj/emacs-eclim"]
+	path = .emacs.d/mepihlaj/emacs-eclim
+	url = git://github.com/senny/emacs-eclim.git
