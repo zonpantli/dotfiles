@@ -13,7 +13,7 @@
 (setq mac-option-modifier nil)
 
 ;;== set smaller font . OS X =====================================
-(set-default-font "-apple-Monaco-medium-normal-normal-*-10-*-*-*-m-0-iso10646-1")
+(set-default-font "-apple-Monaco-medium-normal-normal-*-11-*-*-*-m-0-iso10646-1")
 
 ;;== set initial frame size  =====================================
 (if (window-system)
