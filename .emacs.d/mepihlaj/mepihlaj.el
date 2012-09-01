@@ -94,11 +94,15 @@
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
 
 ;;== ac-nrepl ========================================================
-;; (require 'ac-nrepl)
-;; (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
-;; (add-hook 'clojure-nrepl-mode-hook 'ac-nrepl-setup)
-;; (eval-after-load "auto-complete"
-;;   '(add-to-list 'ac-modes 'nrepl-mode))
+;; load in after-init-hook since starter kit is elpa package and
+;; executes this file before loading nrepl and ac-nrepl packages
+(add-hook 'after-init-hook
+          (lambda ()
+            (require 'ac-nrepl)
+            (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
+            (add-hook 'clojure-nrepl-mode-hook 'ac-nrepl-setup)
+            (eval-after-load "auto-complete"
+              '(add-to-list 'ac-modes 'nrepl-mode))))
 
 ;;== bm for buffer local bookmarks ===================================
 ;; https://github.com/joodland/bm
