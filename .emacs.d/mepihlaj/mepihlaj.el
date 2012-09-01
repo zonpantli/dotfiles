@@ -85,13 +85,20 @@
 ;;== auto-complete ==================================================
 ;; http://sebastianlab.com/post/2409175090/autocomplete-in-clojure
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/mepihlaj//ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/mepihlaj/ac-dict")
 (ac-config-default)
 
 ;;== ac-slime ========================================================
 (add-to-list 'load-path "~/.emacs.d/mepihlaj/ac-slime")
 (require 'ac-slime)
 (add-hook 'slime-mode-hook 'set-up-slime-ac)
+
+;;== ac-nrepl ========================================================
+;; (require 'ac-nrepl)
+;; (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
+;; (add-hook 'clojure-nrepl-mode-hook 'ac-nrepl-setup)
+;; (eval-after-load "auto-complete"
+;;   '(add-to-list 'ac-modes 'nrepl-mode))
 
 ;;== bm for buffer local bookmarks ===================================
 ;; https://github.com/joodland/bm
