@@ -7,3 +7,4 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " autosave/load sessions on exit/startup
 set sessionoptions=buffers
 set clipboard=unnamed
+set autoread
