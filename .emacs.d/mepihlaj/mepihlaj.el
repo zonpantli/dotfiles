@@ -236,7 +236,10 @@
 (add-hook 'after-init-hook
           (lambda ()
             (require 'evil)
-            (evil-mode 1)))
+            (evil-mode 1)
+            (add-to-list 'load-path "~/.emacs.d/mepihlaj/evil-surround")
+            (require 'surround)
+            (global-surround-mode 1)))
 
 ;;== project local varables ====================================
 (require 'project-local-variables)

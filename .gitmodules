@@ -22,3 +22,6 @@
 [submodule ".emacs.d/mepihlaj/geiser"]
 	path = .emacs.d/mepihlaj/geiser
 	url = git://git.sv.gnu.org/geiser.git
+[submodule ".emacs.d/mepihlaj/evil-surround"]
+	path = .emacs.d/mepihlaj/evil-surround
+	url = git://github.com/timcharper/evil-surround.git
