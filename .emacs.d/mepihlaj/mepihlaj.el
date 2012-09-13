@@ -232,6 +232,12 @@
 (defun ido-disable-line-trucation () (set (make-local-variable 'truncate-lines) nil))
 (add-hook 'ido-minibuffer-setup-hook 'ido-disable-line-trucation)
 
+;;== evil ======================================================
+(add-hook 'after-init-hook
+          (lambda ()
+            (require 'evil)
+            (evil-mode 1)))
+
 ;;== project local varables ====================================
 (require 'project-local-variables)
 
