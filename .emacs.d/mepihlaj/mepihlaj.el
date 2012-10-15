@@ -1,10 +1,11 @@
-;;== slime mode setup ===========================================
-(add-hook 'slime-repl-mode-hook (lambda () (paredit-mode +1)))
+;;== nrepl mode setup ===========================================
+(add-hook 'nrepl-mode-hook (lambda () (paredit-mode +1)))
 
-(add-hook 'slime-repl-mode-hook
+(add-hook 'nrepl-mode-hook
           (defun clojure-mode-slime-font-lock ()
             (let (font-lock-mode)
               (clojure-mode-font-lock-setup))))
+
 
 ;;== Set Cmd as Meta key =========================================
 (setq mac-option-key-is-meta nil)
@@ -235,11 +236,13 @@
 ;;== evil ======================================================
 (add-hook 'after-init-hook
           (lambda ()
+            (add-to-list 'load-path "~/.emacs.d/mepihlaj/bonegas-evil")
             (require 'evil)
             (evil-mode 1)
             (add-to-list 'load-path "~/.emacs.d/mepihlaj/evil-surround")
             (require 'surround)
             (global-surround-mode 1)))
+
 
 ;;== project local varables ====================================
 (require 'project-local-variables)
@@ -249,3 +252,4 @@
 
 ;;== set file shortcuts to registers ===========================
 (set-register ?e '(file . "~/.emacs.d/mepihlaj/mepihlaj.el"))
+
