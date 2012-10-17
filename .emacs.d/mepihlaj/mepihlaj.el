@@ -237,10 +237,11 @@
 ;;== evil ======================================================
 (add-hook 'after-init-hook
           (lambda ()
-            (require 'evil)
-            (evil-mode 1)
+            (add-to-list 'load-path "~/.emacs.d/mepihlaj/evil")
             (add-to-list 'load-path "~/.emacs.d/mepihlaj/evil-surround")
+            (require 'evil)
             (require 'surround)
+            (evil-mode 1)
             (global-surround-mode 1)))
 
 

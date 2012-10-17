@@ -25,3 +25,6 @@
 [submodule ".emacs.d/mepihlaj/evil-surround"]
 	path = .emacs.d/mepihlaj/evil-surround
 	url = git://github.com/timcharper/evil-surround.git
+[submodule ".emacs.d/mepihlaj/evil"]
+	path = .emacs.d/mepihlaj/evil
+	url = git://gitorious.org/evil/evil.git
