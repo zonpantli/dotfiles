@@ -226,8 +226,10 @@
             (add-to-list 'load-path "~/.emacs.d/mepihlaj/evil-surround")
             (require 'evil)
             (require 'surround)
-            (evil-mode 1)
-            (global-surround-mode 1)))
+            (global-surround-mode 1)
+            (add-hook 'clojure-mode-hook
+                      '(lambda () (evil-local-mode 1)))))
+
 
 
 ;;== project local varables ====================================
