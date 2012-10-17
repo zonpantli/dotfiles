@@ -100,8 +100,9 @@
 (add-hook 'after-init-hook
           (lambda ()
             (require 'ac-nrepl)
+            (setq nrepl-popup-stacktraces nil)
             (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
-            (add-hook 'clojure-nrepl-mode-hook 'ac-nrepl-setup)
+            (add-hook 'clojure-mode-hook 'ac-nrepl-setup)
             (eval-after-load "auto-complete"
               '(add-to-list 'ac-modes 'nrepl-mode))))
 
@@ -236,7 +237,6 @@
 ;;== evil ======================================================
 (add-hook 'after-init-hook
           (lambda ()
-            (add-to-list 'load-path "~/.emacs.d/mepihlaj/bonegas-evil")
             (require 'evil)
             (evil-mode 1)
             (add-to-list 'load-path "~/.emacs.d/mepihlaj/evil-surround")
