@@ -1,10 +1,6 @@
 ;;== nrepl mode setup ===========================================
-(add-hook 'nrepl-mode-hook (lambda () (paredit-mode +1)))
-
 (add-hook 'nrepl-mode-hook
-          (defun clojure-mode-slime-font-lock ()
-            (let (font-lock-mode)
-              (clojure-mode-font-lock-setup))))
+          (lambda () (paredit-mode 1)))
 
 
 ;;== Set Cmd as Meta key =========================================
@@ -19,17 +15,6 @@
 ;;== set initial frame size  =====================================
 (if (window-system)
     (set-frame-size (selected-frame) 110 60))
-
-
-;;== CDT-Emacs Clojure debug =====================================
-(setq cdt-dir "/Users/mepihlaj/.lein/cdt")
-;; (setq cdt-source-path (let ((src-root "/Users/mepihlaj/.lein/cdt/src")) (format "%s/clojure-1.2.0/src/jvm:%s/clojure-1.2.0/src/clj:%s/clojure-contrib-1.2.0/src/main/clojure:" src-root src-root src-root)))
-;; (load-file "/Users/mepihlaj/.lein/cdt/cdt.el")
-
-(defun cdt-query-cmdline ()
-  (let ((path (strip-trail cdt-dir)))
-    (format "java -classpath%s clojure.main --repl"
-            (mapconcat 'identity (directory-files (format "%s/lib" cdt-dir) t ".jar$") ":"))))
 
 ;;== align-cljlet ===============================================
 (add-to-list 'load-path "~/.emacs.d/mepihlaj/align-cljlet")
