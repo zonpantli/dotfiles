@@ -1,4 +1,5 @@
 ;;== nrepl mode setup ===========================================
+(setq nrepl-popup-stacktraces nil)
 (add-hook 'nrepl-mode-hook
           (lambda () (paredit-mode 1)))
 
@@ -80,7 +81,6 @@
 (add-hook 'after-init-hook
           (lambda ()
             (require 'ac-nrepl)
-            (setq nrepl-popup-stacktraces nil)
             (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
             (add-hook 'clojure-mode-hook 'ac-nrepl-setup)
             (eval-after-load "auto-complete"
