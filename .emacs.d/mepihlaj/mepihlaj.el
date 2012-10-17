@@ -74,11 +74,6 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/mepihlaj/ac-dict")
 (ac-config-default)
 
-;;== ac-slime ========================================================
-(add-to-list 'load-path "~/.emacs.d/mepihlaj/ac-slime")
-(require 'ac-slime)
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-
 ;;== ac-nrepl ========================================================
 ;; load in after-init-hook since starter kit is elpa package and
 ;; executes this file before loading nrepl and ac-nrepl packages
