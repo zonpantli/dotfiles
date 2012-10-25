@@ -4,7 +4,7 @@
 
 
 ;;;### (autoloads (ac-nrepl-setup ac-nrepl-clear-class-cache) "ac-nrepl"
-;;;;;;  "ac-nrepl.el" (20606 33761))
+;;;;;;  "ac-nrepl.el" (20617 5081))
 ;;; Generated autoloads from ac-nrepl.el
 
 (autoload 'ac-nrepl-clear-class-cache "ac-nrepl" "\
@@ -49,7 +49,7 @@ This affects only the current buffer.
 
 ;;;***
 
-;;;### (autoloads nil nil ("ac-nrepl-pkg.el") (20606 33761 744213))
+;;;### (autoloads nil nil ("ac-nrepl-pkg.el") (20617 5081 619131))
 
 ;;;***
 

@@ -3,8 +3,9 @@
 ;;; Code:
 
 
-;;;### (autoloads (nrepl nrepl-jack-in nrepl-enable-on-existing-clojure-buffers
-;;;;;;  nrepl-interaction-mode) "nrepl" "nrepl.el" (20602 64071))
+;;;### (autoloads (nrepl nrepl-jack-in nrepl-disable-on-existing-clojure-buffers
+;;;;;;  nrepl-enable-on-existing-clojure-buffers nrepl-interaction-mode)
+;;;;;;  "nrepl" "nrepl.el" (20617 5077))
 ;;; Generated autoloads from nrepl.el
 
 (autoload 'nrepl-interaction-mode "nrepl" "\
@@ -17,10 +18,15 @@ Minor mode for nrepl interaction from a Clojure buffer.
 
 \(fn)" t nil)
 
+(autoload 'nrepl-disable-on-existing-clojure-buffers "nrepl" "\
+
+
+\(fn)" t nil)
+
 (autoload 'nrepl-jack-in "nrepl" "\
 
 
-\(fn PROMPT-PROJECT)" t nil)
+\(fn &optional PROMPT-PROJECT)" t nil)
 
 (add-hook 'nrepl-connected-hook 'nrepl-enable-on-existing-clojure-buffers)
 
@@ -31,7 +37,7 @@ Minor mode for nrepl interaction from a Clojure buffer.
 
 ;;;***
 
-;;;### (autoloads nil nil ("nrepl-pkg.el") (20602 64071 119226))
+;;;### (autoloads nil nil ("nrepl-pkg.el") (20617 5077 591440))
 
 ;;;***
 
