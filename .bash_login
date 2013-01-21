@@ -3,7 +3,7 @@ function parse_git_branch {
   echo "(${ref#refs/heads/}) "
 }
 
-GREEN="\[\033[0;32m\]" 
+GREEN="\[\033[0;32m\]"
 WHITE="\[\033[1;37m\]"
 
 # If running interactively, then:
@@ -38,15 +38,25 @@ alias gitgraph='git log --graph --date-order -C -M --pretty=format:"<%h> %ad [%a
 alias b='bundle exec'
 alias oolong='java -jar /Users/mepihlaj/projects/java/programming-for-the-jvm/oolong/target/scala_2.8.1/engel-1.0.jar'
 alias gnoloo='java -cp /Users/mepihlaj/projects/java/programming-for-the-jvm/oolong/target/scala_2.8.1/classes COM.sootNsmoke.oolong.Gnoloo'
+alias DumpClass='java -cp /Users/mepihlaj/projects/java/programming-for-the-jvm/oolong/target/scala_2.8.1/classes COM.sootNsmoke.oolong.DumpClass'
+
+export EDITOR=mvim
+
+# racket
+export PATH="$PATH:/Applications/Racket v5.2.1/bin"
+
+# SML
+export PATH="$PATH:/usr/local/smlnj-110.75/bin"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+export SCALA_HOME="/usr/local/Cellar/scala/2.9.2/libexec"
 export JRUBY_OPTS="--1.9"
 
 # Android SDK, phonegap android
-export ANDROID_HOME="/Users/mepihlaj/Library/android-sdk-macosx"
-export ANDROID_SDK="/Users/mepihlaj/Library/android-sdk-macosx"
-export PATH="$PATH:/Users/mepihlaj/Library/android-sdk-macosx/platform-tools"
-export PATH="$PATH:/Users/mepihlaj/Library/android-sdk-macosx/tools"
+export ANDROID_HOME="/Users/mepihlaj/projects-android/android-sdk-macosx"
+export ANDROID_SDK="/Users/mepihlaj/projects/android/android-sdk-macosx"
+export PATH="$PATH:/Users/mepihlaj/projects/android/android-sdk-macosx/platform-tools"
+export PATH="$PATH:/Users/mepihlaj/projects/android/android-sdk-macosx/tools"
 
 # cabal
 export PATH="$PATH:/Users/mepihlaj/.cabal/bin"
@@ -55,12 +65,31 @@ export PATH="$PATH:/Users/mepihlaj/.cabal/bin"
 export HADOOP_HOME="/Users/mepihlaj/Library/CDH3/hadoop"
 export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hadoop/bin"
 
+# lemur
+export LEMUR_HOME="/Users/mepihlaj/projects/hadoop/lemur/lemur-1.2.0"
+export LEMUR_EXTRA_CLASSPATH=""
+export AWS_CREDENTIAL_FILE="/Users/mepihlaj/.s3cfg"
+export PATH="$PATH:$LEMUR_HOME/bin"
+
+# gcc arm toolchain
+export PATH=/Users/mepihlaj/projects/arm/arm-cs-tools-2012-11-24/bin:$PATH
+
+# heroku toolbelt
+export PATH=/usr/local/heroku/bin:$PATH
+
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Node version manager
 # source /Users/mepihlaj/Library/nvm/nvm.sh
 # nvm use default
+
+# coffee
+export PATH="$PATH:/usr/local/share/npm/bin"
+
+# CUDA
+export PATH=/Developer/NVIDIA/CUDA-5.0/bin:$PATH
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.0/lib:$DYLD_LIBRARY_PATH
 
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000

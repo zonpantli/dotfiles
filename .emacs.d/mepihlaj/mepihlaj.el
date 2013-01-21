@@ -25,6 +25,9 @@
 (load-file "~/.emacs.d/mepihlaj/geiser/elisp/geiser.el")
 (add-hook 'geiser-racket-mode-hook (lambda () (paredit-mode +1)))
 (setq geiser-active-implementations '(racket))
+(setq geiser-guile-binary "/usr/local/bin/guile")
+(setq geiser-racket-binary "/Applications/Racket v5.2.1/bin/racket")
+
 
 
 ;;== undo-tree mode ===============================================
