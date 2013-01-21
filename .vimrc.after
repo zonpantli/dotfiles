@@ -10,5 +10,5 @@ set clipboard=unnamed
 set autoread
 
 " xiki
-let $XIKI_DIR = "/Users/mepihlaj/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/xiki-0.6.3/"
-source /Users/mepihlaj/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/xiki-0.6.3/etc/vim/xiki.vim
+" let $XIKI_DIR = "/Users/mepihlaj/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/xiki-0.6.3/"
+" source /Users/mepihlaj/.rbenv/versions/1.9.3-p194/lib/ruby/gems/1.9.1/gems/xiki-0.6.3/etc/vim/xiki.vim
