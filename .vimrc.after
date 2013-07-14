@@ -1,9 +1,6 @@
 color jellybeans+
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'", '#{': '}', '|':'|' } 
-" let g:AutoCloseProtectedRegions = ["Character"] 
-
 " autosave/load sessions on exit/startup
 set sessionoptions=buffers
 set clipboard=unnamed
@@ -15,3 +12,12 @@ set autoread
 
 " associate houce .templ as coffee files
 au BufNewFile,BufRead *.templ set filetype=coffee
+
+" associate black_coffee as coffee files
+au BufNewFile,BufRead *.black_coffee set filetype=coffee
+
+" associate houce .tmpl as coffee files
+au BufNewFile,BufRead *.tmpl set filetype=coffee
+
+" associate coffescript css files
+au BufNewFile,BufRead *.ccss set filetype=coffee

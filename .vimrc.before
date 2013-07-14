@@ -1,1 +1,2 @@
 call janus#disable_plugin('vim-autoclose')
+call janus#disable_plugin('eclim')

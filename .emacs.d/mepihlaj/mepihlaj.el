@@ -226,6 +226,8 @@
             (require 'surround)
             (global-surround-mode 1)
             (add-hook 'clojure-mode-hook
+                      '(lambda () (evil-local-mode 1)))
+            (add-hook 'sml-mode-hook
                       '(lambda () (evil-local-mode 1)))))
 
 
