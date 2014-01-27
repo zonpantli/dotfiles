@@ -191,6 +191,8 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 
 ;;== org-mode babel Clojure(require 'ob) ========================
+(require 'org-install)
+(require 'ob-tangle)
 (add-to-list 'org-babel-tangle-lang-exts '("clojure" . "clj"))
 
 (defvar org-babel-default-header-args:clojure 
