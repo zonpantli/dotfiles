@@ -1,6 +1,6 @@
-;;== nrepl mode setup ===========================================
-(setq nrepl-popup-stacktraces nil)
-(add-hook 'nrepl-mode-hook
+;;== cider mode setup ===========================================
+(setq cider-popup-stacktraces nil)
+(add-hook 'cider
           (lambda () (paredit-mode 1)))
 
 
@@ -78,16 +78,6 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/mepihlaj/ac-dict")
 (ac-config-default)
 
-;;== ac-nrepl ========================================================
-;; load in after-init-hook since starter kit is elpa package and
-;; executes this file before loading nrepl and ac-nrepl packages
-;; (add-hook 'after-init-hook
-;;           (lambda ()
-;;             (require 'ac-nrepl)
-;;             (add-hook 'nrepl-mode-hook 'ac-nrepl-setup)
-;;             (add-hook 'clojure-mode-hook 'ac-nrepl-setup)
-;;             (eval-after-load "auto-complete"
-;;                '(add-to-list 'ac-modes 'nrepl-mode))))
 
 ;;== bm for buffer local bookmarks ===================================
 ;; https://github.com/joodland/bm
