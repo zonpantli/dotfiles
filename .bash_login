@@ -31,6 +31,9 @@ export PATH="/usr/local/bin:/usr/local/sbin:~/bin:$PATH"
 #-- source private stuff
 source /Users/mepihlaj/.bash_private
 
+#-- increase amount of open files per terminal session
+eval "ulimit -S -n 2048"
+
 # misc
 alias rb='rm *~'
 alias ios='/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app/Contents/MacOS/iPhone\ Simulator'
@@ -96,3 +99,7 @@ export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_HEAP_FREE_MIN=500000
+
+# Added by Canopy installer on 2013-08-11
+# VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make bashprompt show that Canopy is active, otherwise 1
+VIRTUAL_ENV_DISABLE_PROMPT=1 source /Users/mepihlaj/Library/Enthought/Canopy_64bit/User/bin/activate
