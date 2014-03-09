@@ -51,7 +51,7 @@ export PATH="$PATH:/Applications/Racket v5.2.1/bin"
 # SML
 export PATH="$PATH:/usr/local/smlnj-110.75/bin"
 
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7.0_51)
 export SCALA_HOME="/usr/local/Cellar/scala/2.9.2/libexec"
 export JRUBY_OPTS="--1.9"
 
@@ -92,7 +92,7 @@ export PATH="$PATH:/usr/local/share/npm/bin"
 
 # CUDA
 export PATH=/Developer/NVIDIA/CUDA-5.0/bin:$PATH
-export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.0/lib:$DYLD_LIBRARY_PATH
+# export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.0/lib:$DYLD_LIBRARY_PATH
 
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
@@ -102,4 +102,4 @@ export RUBY_HEAP_FREE_MIN=500000
 
 # Added by Canopy installer on 2013-08-11
 # VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make bashprompt show that Canopy is active, otherwise 1
-VIRTUAL_ENV_DISABLE_PROMPT=1 source /Users/mepihlaj/Library/Enthought/Canopy_64bit/User/bin/activate
+# VIRTUAL_ENV_DISABLE_PROMPT=1 source /Users/mepihlaj/Library/Enthought/Canopy_64bit/User/bin/activate
