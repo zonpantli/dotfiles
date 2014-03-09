@@ -1,7 +1,16 @@
 ;;== cider mode setup ===========================================
 (setq cider-popup-stacktraces nil)
-(add-hook 'cider
+(add-hook 'cider-repl-mode-hook
           (lambda () (paredit-mode 1)))
+
+(setq nrepl-hide-special-buffers t)
+
+;;== ac-nrepl ====================================================
+;(require 'ac-nrepl)
+;(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
+;(add-hook 'cider-mode-hook 'ac-nrepl-setup)
+;(eval-after-load "auto-complete"
+  ;'(add-to-list 'ac-modes 'cider-repl-mode))
 
 
 ;;== Set Cmd as Meta key =========================================
@@ -16,6 +25,9 @@
 ;;== set initial frame size  =====================================
 (if (window-system)
     (set-frame-size (selected-frame) 110 60))
+
+;;== do not use pretty fn =======================================
+(remove-hook 'clojure-mode-hook 'esk-pretty-fn)
 
 ;;== align-cljlet ===============================================
 (add-to-list 'load-path "~/.emacs.d/mepihlaj/align-cljlet")
