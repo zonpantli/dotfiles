@@ -65,8 +65,11 @@ export PATH="$PATH:/Users/mepihlaj/projects/android/android-sdk-macosx/tools"
 export PATH="$PATH:/Users/mepihlaj/.cabal/bin"
 
 # Cloudera CDH3
-export HADOOP_HOME="/Users/mepihlaj/Library/CDH3/hadoop"
-export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hadoop/bin"
+# export HADOOP_HOME="/Users/mepihlaj/Library/CDH3/hadoop"
+# export PATH="$PATH:/Users/mepihlaj/Library/CDH3/hadoop/bin"
+
+# ApacheHadoop
+export PATH="$PATH:/Users/mepihlaj/Library/ApacheHadoop/hadoop/bin"
 
 # lemur
 export LEMUR_HOME="/Users/mepihlaj/projects/hadoop/lemur/lemur-1.2.0"
@@ -94,12 +97,15 @@ export PATH="$PATH:/usr/local/share/npm/bin"
 export PATH=/Developer/NVIDIA/CUDA-5.0/bin:$PATH
 # export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-5.0/lib:$DYLD_LIBRARY_PATH
 
-export RUBY_HEAP_MIN_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=1000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=100000000
-export RUBY_HEAP_FREE_MIN=500000
+# export RUBY_HEAP_MIN_SLOTS=1000000
+# export RUBY_HEAP_SLOTS_INCREMENT=1000000
+# export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+# export RUBY_GC_MALLOC_LIMIT=100000000
+# export RUBY_HEAP_FREE_MIN=500000
 
 # Added by Canopy installer on 2013-08-11
 # VIRTUAL_ENV_DISABLE_PROMPT can be set to '' to make bashprompt show that Canopy is active, otherwise 1
 # VIRTUAL_ENV_DISABLE_PROMPT=1 source /Users/mepihlaj/Library/Enthought/Canopy_64bit/User/bin/activate
+
+# Docker
+export DOCKER_HOST=tcp://127.0.0.1:4243
