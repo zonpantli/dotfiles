@@ -231,8 +231,11 @@
             (global-surround-mode 1)
             (add-hook 'clojure-mode-hook
                       '(lambda () (evil-local-mode 1)))
+            (add-hook 'clojure-mode-hook
+                      '(lambda () (setq evil-shift-width 2)))
             (add-hook 'sml-mode-hook
-                      '(lambda () (evil-local-mode 1)))))
+                      '(lambda () (evil-local-mode 1)))
+))
 
 
 
