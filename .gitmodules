@@ -4,6 +4,9 @@
 [submodule ".emacs.d/mepihlaj/align-cljlet"]
 	path = .emacs.d/mepihlaj/align-cljlet
 	url = https://github.com/gstamp/align-cljlet.git
+[submodule ".emacs.d/mepihlaj/bonegas-evil"]
+	path = .emacs.d/mepihlaj/bonegas-evil
+	url = https://gitorious.org/evil/bonegas-evil.git
 [submodule ".emacs.d/mepihlaj/bm"]
 	path = .emacs.d/mepihlaj/bm
 	url = https://github.com/joodland/bm.git
