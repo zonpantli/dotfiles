@@ -52,6 +52,10 @@ export PATH="$PATH:/Applications/Racket v5.2.1/bin"
 export PATH="$PATH:/usr/local/smlnj-110.75/bin"
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7.0_51)
+setjdk() {
+  export JAVA_HOME=$(/usr/libexec/java_home -v $1)
+}
+
 export SCALA_HOME="/usr/local/Cellar/scala/2.9.2/libexec"
 export JRUBY_OPTS="--1.9"
 
@@ -109,3 +113,6 @@ export PATH=/Developer/NVIDIA/CUDA-5.0/bin:$PATH
 
 # Docker
 export DOCKER_HOST=tcp://127.0.0.1:4243
+
+# Vowpal Wabbit
+export VW_HOME=/Users/mepihlaj/projects/machine-learning/vowpal_wabbit
