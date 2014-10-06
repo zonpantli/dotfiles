@@ -21,3 +21,6 @@ au BufNewFile,BufRead *.tmpl set filetype=coffee
 
 " associate coffescript css files
 au BufNewFile,BufRead *.ccss set filetype=coffee
+
+" associate es6 as js files
+au BufNewFile,BufRead *.es6 set filetype=javascript
