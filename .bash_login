@@ -49,7 +49,7 @@ export EDITOR=mvim
 export PATH="$PATH:/Applications/Racket v5.2.1/bin"
 
 # SML
-export PATH="$PATH:/usr/local/smlnj-110.75/bin"
+export PATH="$PATH:/usr/local/smlnj/bin"
 
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 setjdk() {
