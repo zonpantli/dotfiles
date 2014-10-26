@@ -120,3 +120,7 @@ export VW_HOME=/Users/mepihlaj/projects/machine-learning/vowpal_wabbit
 
 # Tomcat
 export CATALINA_HOME=/usr/local/Cellar/tomcat/8.0.14/libexec
+
+# Apache Derby
+export DERBY_HOME=/Users/mepihlaj/projects/java/derby/db-derby-10.11.1.1-bin
+export PATH=/Users/mepihlaj/projects/java/derby/db-derby-10.11.1.1-bin/bin:$PATH
