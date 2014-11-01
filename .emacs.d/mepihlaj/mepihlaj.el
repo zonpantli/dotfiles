@@ -237,6 +237,31 @@
                       '(lambda () (evil-local-mode 1)))
 ))
 
+;; Overload shifts so that they don't lose the selection
+;; http://superuser.com/questions/684540/evil-mode-evil-shift-left-loses-selection
+(define-key evil-visual-state-map (kbd ">") 'djoyner/evil-shift-right-visual)
+(define-key evil-visual-state-map (kbd "<") 'djoyner/evil-shift-left-visual)
+(define-key evil-visual-state-map (kbd "M-]") 'djoyner/evil-shift-right-visual)
+(define-key evil-visual-state-map (kbd "M-[") 'djoyner/evil-shift-left-visual)
+
+(defun djoyner/evil-shift-left-visual ()
+  (interactive)
+  (evil-shift-left (region-beginning) (region-end))
+  (evil-normal-state)
+  (evil-visual-restore))
+
+(defun djoyner/evil-shift-right-visual ()
+  (interactive)
+  (evil-shift-right (region-beginning) (region-end))
+  (evil-normal-state)
+  (evil-visual-restore))
+
+;; For an OS X user, CMD-V pastes in insert mode
+(define-key evil-insert-state-map (kbd "M-v") 'evil-paste-after)
+
+;; Like in MacVim
+(define-key evil-visual-state-map (kbd "M-/") 'comment-dwim)
+
 
 
 ;;== project local varables ====================================
