@@ -26,8 +26,6 @@
 (if (window-system)
     (set-frame-size (selected-frame) 110 60))
 
-;;== do not use pretty fn =======================================
-(remove-hook 'clojure-mode-hook 'esk-pretty-fn)
 
 ;;== align-cljlet ===============================================
 (add-to-list 'load-path "~/.emacs.d/mepihlaj/align-cljlet")
