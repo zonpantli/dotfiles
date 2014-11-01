@@ -235,6 +235,8 @@
                       '(lambda () (setq evil-shift-width 2)))
             (add-hook 'sml-mode-hook
                       '(lambda () (evil-local-mode 1)))
+            (add-hook 'emacs-lisp-mode-hook
+                      '(lambda () (evil-local-mode 1)))
 ))
 
 
