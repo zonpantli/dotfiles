@@ -39,7 +39,6 @@
 (setq geiser-racket-binary "/Applications/Racket v5.2.1/bin/racket")
 
 
-
 ;;== undo-tree mode ===============================================
 (require 'undo-tree)
 (global-undo-tree-mode)
@@ -47,31 +46,6 @@
 ;;== textmate mode https://github.com/tanoku/textmate.el ==========
 (require 'textmate)
 (textmate-mode)
-
-;;== yasnippets ===================================================
-(add-to-list 'load-path "~/.emacs.d/mepihlaj/yasnippet")
-(require 'yasnippet)
-(setq yas/snippet-dirs '("~/.emacs.d/mepihlaj/yasnippet/snippets"
-                         "~/.emacs.d/mepihlaj/yasnippet/extras/imported"))
-;; (yas/global-mode 1)
-
-;;== coffee mode indenting ========================================
-(add-to-list 'load-path "~/.emacs.d/mepihlaj/coffee-mode")
-(require 'coffee-mode)
-
-(defun coffee-custom ()
-  "coffee-mode-hook"
-
- ;; set indentation
- (set (make-local-variable 'tab-width) 2)
- 
- ;; compile key binding
- (define-key coffee-mode-map [(meta r)] 'coffee-compile-buffer))
-
-(add-hook 'coffee-mode-hook
-  '(lambda() (coffee-custom)))
-
-
 
 ;;== autopair for non-lisp parenthesis goodness ===================
 (require 'autopair)
@@ -235,32 +209,33 @@
                       '(lambda () (evil-local-mode 1)))
             (add-hook 'emacs-lisp-mode-hook
                       '(lambda () (evil-local-mode 1)))
+
+            ;; Overload shifts so that they don't lose the selection
+            ;; http://superuser.com/questions/684540/evil-mode-evil-shift-left-loses-selection
+            (define-key evil-visual-state-map (kbd ">") 'djoyner/evil-shift-right-visual)
+            (define-key evil-visual-state-map (kbd "<") 'djoyner/evil-shift-left-visual)
+            (define-key evil-visual-state-map (kbd "M-]") 'djoyner/evil-shift-right-visual)
+            (define-key evil-visual-state-map (kbd "M-[") 'djoyner/evil-shift-left-visual)
+
+            (defun djoyner/evil-shift-left-visual ()
+              (interactive)
+              (evil-shift-left (region-beginning) (region-end))
+              (evil-normal-state)
+              (evil-visual-restore))
+
+            (defun djoyner/evil-shift-right-visual ()
+              (interactive)
+              (evil-shift-right (region-beginning) (region-end))
+              (evil-normal-state)
+              (evil-visual-restore))
+
+            ;; For an OS X user, CMD-V pastes in insert mode
+            (define-key evil-insert-state-map (kbd "M-v") 'evil-paste-after)
+
+            ;; Like in MacVim
+            (define-key evil-visual-state-map (kbd "M-/") 'comment-dwim)
 ))
 
-;; Overload shifts so that they don't lose the selection
-;; http://superuser.com/questions/684540/evil-mode-evil-shift-left-loses-selection
-(define-key evil-visual-state-map (kbd ">") 'djoyner/evil-shift-right-visual)
-(define-key evil-visual-state-map (kbd "<") 'djoyner/evil-shift-left-visual)
-(define-key evil-visual-state-map (kbd "M-]") 'djoyner/evil-shift-right-visual)
-(define-key evil-visual-state-map (kbd "M-[") 'djoyner/evil-shift-left-visual)
-
-(defun djoyner/evil-shift-left-visual ()
-  (interactive)
-  (evil-shift-left (region-beginning) (region-end))
-  (evil-normal-state)
-  (evil-visual-restore))
-
-(defun djoyner/evil-shift-right-visual ()
-  (interactive)
-  (evil-shift-right (region-beginning) (region-end))
-  (evil-normal-state)
-  (evil-visual-restore))
-
-;; For an OS X user, CMD-V pastes in insert mode
-(define-key evil-insert-state-map (kbd "M-v") 'evil-paste-after)
-
-;; Like in MacVim
-(define-key evil-visual-state-map (kbd "M-/") 'comment-dwim)
 
 
 
