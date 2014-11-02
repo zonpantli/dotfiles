@@ -4,7 +4,7 @@ function parse_git_branch {
 }
 
 GREEN="\[\033[0;32m\]"
-WHITE="\[\033[1;37m\]"
+WHITE="\[\033[0;37m\]"
 
 # If running interactively, then:
 if [ "$PS1" ]; then
