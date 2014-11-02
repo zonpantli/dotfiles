@@ -10,18 +10,12 @@
 [submodule ".emacs.d/mepihlaj/bm"]
 	path = .emacs.d/mepihlaj/bm
 	url = https://github.com/joodland/bm.git
-[submodule ".emacs.d/mepihlaj/yasnippet"]
-	path = .emacs.d/mepihlaj/yasnippet
-	url = https://github.com/capitaomorte/yasnippet.git
 [submodule ".emacs.d/mepihlaj/io-emacs"]
 	path = .emacs.d/mepihlaj/io-emacs
 	url = https://github.com/slackorama/io-emacs.git
 [submodule ".emacs.d/mepihlaj/js2-mode"]
 	path = .emacs.d/mepihlaj/js2-mode
 	url = git://github.com/mooz/js2-mode.git
-[submodule ".emacs.d/mepihlaj/coffee-mode"]
-	path = .emacs.d/mepihlaj/coffee-mode
-	url = git://github.com/defunkt/coffee-mode.git
 [submodule ".emacs.d/mepihlaj/geiser"]
 	path = .emacs.d/mepihlaj/geiser
 	url = git://git.sv.gnu.org/geiser.git

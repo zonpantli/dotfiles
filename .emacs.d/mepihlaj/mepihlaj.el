@@ -75,13 +75,6 @@
 (global-set-key (kbd "<f2>")   'bm-next)
 (global-set-key (kbd "<S-f2>") 'bm-previous)
 
-
-;;== sr-speedbar for speedbar fixed on main window ==================
-(require 'sr-speedbar)
-(setq sr-speedbar-right-side nil)
-(setq speedbar-use-images nil)
-(setq sr-speedbar-skip-other-window-p t)
-
 ;;== Clourescript ==================================================
 ;;; cljs browser repl as inferior lisp
 

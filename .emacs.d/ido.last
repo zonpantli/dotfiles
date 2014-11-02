@@ -1,0 +1,32 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/mepihlaj/.emacs.d/" . "mepihlaj/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/mepihlaj/.emacs.d/mepihlaj/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "mepihlaj.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/mepihlaj/bin/" (21590 44210 0 0) "stop-postgres.sh" "start-postgres.sh" "scrutil" "riemann-0.2.4/" "riemann/" "perf" "node-web-server.js" "linksim.rb" "lein1" "lein" "jq" "emacs" "docker" "curlfinal" "colored-logcat.py" "clean-system-logs.sh" "chrome" "adb-devtools" "../" "./")
+
+ ("/Users/mepihlaj/" (21590 43154 0 0) "yankring_history_v2.txt" "VirtualBox VMs/" "Public/" "projects/" "Pictures/" "OldDownloads/" "NetBeansProjects/" "Music/" "Movies/" "Library/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" ".vimrc.before" ".vimrc.after" ".vimrc" ".viminfo" ".vim/" ".vagrant.d/" ".Trash/" ".subversion/" ".ssh/" ".s3cfg.nextmesh" ".s3cfg.kovalo" ".s3cfg.bu" ".s3cfg" ".pryrc" ".pow/" ".pagekite.rc" ".m2/" ".lein/" ".jrebel/" ".janus/" ".heroku/" ".gvimrc.after" ".gvimrc" ".gitconfig" ".emacs.d/" ".ec2/" ".DS_Store" ".dropbox/" ".cvspass" ".config/" ".compleat/" ".chef/" ".CFUserTextEncoding" ".cache/" ".bundle/" ".bashrc" ".bash_private" ".bash_login" ".bash_history" ".ackrc" "../" "./")
+
+ ("/Users/mepihlaj/projects/dotfiles/.emacs.d/mepihlaj/" (21590 41575 0 0) "yasnippet/" "undo-tree.el" "textmate.el" "scss-mode.el" "project-local-variables.el" "popup.el" "mepihlaj.el" "js2-mode/" "io-mode.el" "io-emacs/" "geiser/" "fuzzy.el" "evil-surround/" "evil/" "coffee-mode/" "bm/" "autopair.el" "auto-complete.el" "auto-complete-config.el" "align-cljlet/" "ac-slime/" "ac-dict/" "#mepihlaj.el#" "../" "./")
+
+ ("/Users/mepihlaj/.emacs.d/mepihlaj/" (21590 19120 0 0) "yasnippet/" "undo-tree.el" "textmate.el" "sr-speedbar.el" "scss-mode.el" "project-local-variables.el" "popup.el" "mepihlaj.el" "js2-mode/" "io-mode.el" "io-emacs/" "geiser/" "fuzzy.el" "evil-surround/" "evil/" "coffee-mode/" "bm/" "autopair.el" "auto-complete.el" "auto-complete-config.el" "align-cljlet/" "ac-slime/" "ac-dict/" "../" "./")
+
+ ("/Users/mepihlaj/.emacs.d/" (21590 38433 0 0) "url/" "places" "mepihlaj/" "init.el" "elpa/" "auto-save-list/" "ac-comphist.dat" ".smex-items" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
