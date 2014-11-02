@@ -43,6 +43,7 @@ alias oolong='java -jar /Users/mepihlaj/projects/java/programming-for-the-jvm/oo
 alias gnoloo='java -cp /Users/mepihlaj/projects/java/programming-for-the-jvm/oolong/target/scala_2.8.1/classes COM.sootNsmoke.oolong.Gnoloo'
 alias DumpClass='java -cp /Users/mepihlaj/projects/java/programming-for-the-jvm/oolong/target/scala_2.8.1/classes COM.sootNsmoke.oolong.DumpClass'
 alias jrebel-mvn='export MAVEN_OPTS=-javaagent:/Users/mepihlaj/Library/JRebel/jrebel.jar'
+alias emacs='open -a /Applications/Emacs.app $1'
 
 export EDITOR=mvim
 
