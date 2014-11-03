@@ -22,6 +22,9 @@
 ;;== set smaller font . OS X =====================================
 (set-default-font "-apple-Monaco-medium-normal-normal-*-11-*-*-*-m-0-iso10646-1")
 
+;;== Cycle frame more OS X natively ==============================
+(global-set-key "\M-`" 'other-frame)
+
 ;;== set initial frame size  =====================================
 (if (window-system)
     (set-frame-size (selected-frame) 110 60))
