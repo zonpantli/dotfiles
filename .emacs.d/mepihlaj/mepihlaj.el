@@ -142,6 +142,9 @@
              (define-key clojure-mode-map (kbd "C-c e") 'shell-eval-last-expression)
              (define-key clojure-mode-map (kbd "C-c x") 'shell-eval-defun)))
 
+;;== associate .boot as clj file =================================
+(add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
+
 ;;== scss mode ===================================================
 (autoload 'scss-mode "scss-mode")
 (add-to-list 'auto-mode-alist '("\\.scss\\'" . scss-mode))
