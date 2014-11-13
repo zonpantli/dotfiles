@@ -142,6 +142,15 @@
              (define-key clojure-mode-map (kbd "C-c e") 'shell-eval-last-expression)
              (define-key clojure-mode-map (kbd "C-c x") 'shell-eval-defun)))
 
+;;== arcadia repl in inferior lisp ===============================
+(defcustom arcadia-repl-command "ruby repl-client.rb"
+  "Command to use for the Arcadia REPL into Unity.")
+
+(defun arcadia-repl ()
+  "Start repl"
+  (interactive)
+  (run-lisp arcadia-repl-command))
+
 ;;== associate .boot as clj file =================================
 (add-to-list 'auto-mode-alist '("\\.boot\\'" . clojure-mode))
 
