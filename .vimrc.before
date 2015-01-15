@@ -1,2 +1,4 @@
 call janus#disable_plugin('vim-autoclose')
 call janus#disable_plugin('eclim')
+
+let g:yankring_history_file = ".yankring_history"

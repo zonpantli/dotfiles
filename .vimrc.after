@@ -27,3 +27,4 @@ au BufNewFile,BufRead *.es6 set filetype=javascript
 
 " excludes for CtrlP - remember to run :ClearAllCtrlPCaches after updating
 set wildignore+=*/node_modules/*,*/dist/*,*/target/*,*/.tmp/*,*/.git/*,*/.hg/*,*/.svn/*,*/.yardoc/*,*.exe,*.so,*.dat
+

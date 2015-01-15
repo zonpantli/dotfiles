@@ -45,7 +45,7 @@ alias DumpClass='java -cp /Users/mepihlaj/projects/java/programming-for-the-jvm/
 alias jrebel-mvn='export MAVEN_OPTS=-javaagent:/Users/mepihlaj/Library/JRebel/jrebel.jar'
 alias emacs='open -a /Applications/Emacs.app $1'
 
-export EDITOR=mvim
+#export EDITOR=mvim
 
 # racket
 export PATH="$PATH:/Applications/Racket v5.2.1/bin"
