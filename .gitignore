@@ -15,3 +15,4 @@
 .emacs.d/mepihlaj/personal.el
 .emacs.d/mepihlaj/repl-port
 .emacs.d/tmp
+.lein/self-installs
