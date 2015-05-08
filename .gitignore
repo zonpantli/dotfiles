@@ -16,3 +16,4 @@
 .emacs.d/mepihlaj/repl-port
 .emacs.d/tmp
 .lein/self-installs
+.lein/repl-history
