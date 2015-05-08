@@ -22,6 +22,9 @@ if [ "$PS1" ]; then
     PS1="\u@\h:\w $GREEN\$(parse_git_branch)$WHITE$ "
 fi
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
 
 # ---------------------------------------------------------------------
 
@@ -93,8 +96,8 @@ export PATH=/usr/local/heroku/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Node version manager
-# source /Users/mepihlaj/Library/nvm/nvm.sh
-# nvm use default
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # coffee
 export PATH="$PATH:/usr/local/share/npm/bin"
